@@ -1,16 +1,7 @@
-# Environnement
-.env
-
-# Firebase credentials
+echo ".env
 firebase-admin.json
-
-# Python
 __pycache__/
 venv/
-
-# Node / React
 node_modules/
-
-# IDE
 .vscode/
-.idea/
+.idea/" > .gitignore
