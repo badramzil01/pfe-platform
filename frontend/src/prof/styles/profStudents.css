@@ -1,0 +1,167 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --green: #16a34a;
+  --amber: #d97706;
+}
+
+.prof-students {
+  min-height: 100%;
+  padding: 24px;
+  background: #ffffff;
+  color: #ffffff;
+}
+
+/* HEADER */
+.ps-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.ps-header h2 {
+  margin: 0;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ps-count {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* EMPTY */
+.ps-empty {
+  background:  #ffffff;
+  border: 1px dashed  #1a1d24;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* PROJECT CARD */
+.ps-project {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
+.ps-project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.ps-project-header h3 {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* TABLE */
+.ps-table-wrapper {
+  overflow-x: auto;
+}
+
+.ps-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ps-table th,
+.ps-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.ps-table th {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #2563eb;
+  background: #f9fafb;
+}
+
+.ps-table tr:hover {
+  background: #f9fafb;
+}
+
+/* STUDENT CELL */
+.ps-student {
+  display: flex;
+  color: #000000;
+  align-items: center;
+  gap: 10px;
+}
+
+.ps-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ps-email {
+  color: #000000;
+  font-size: 13px;
+}
+
+/* BADGES */
+.ps-pill {
+  display: inline-block;
+  min-width: 36px;
+  text-align: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  background: #f9fafb;
+}
+
+.ps-pill.ok {
+  color: var(--green);
+  background: #dcfce7;
+  border-color: #bbf7d0;
+}
+
+.ps-pill.warn {
+  color: var(--amber);
+  background: #fef3c7;
+  border-color: #fde68a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .ps-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ps-table th,
+  .ps-table td {
+    padding: 10px;
+  }
+}

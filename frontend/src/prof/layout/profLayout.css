@@ -1,0 +1,12 @@
+.prof-layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.prof-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

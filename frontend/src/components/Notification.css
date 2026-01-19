@@ -1,0 +1,118 @@
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  min-width: 300px;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.notification.show {
+  transform: translateX(0);
+}
+
+.notification.hide {
+  transform: translateX(100%);
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 12px;
+}
+
+.notification-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.notification-message {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.notification-close:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* Success notification */
+.notification.success {
+  border-left: 4px solid #10b981;
+}
+
+.notification.success .notification-icon {
+  color: #10b981;
+}
+
+/* Error notification */
+.notification.error {
+  border-left: 4px solid #ef4444;
+}
+
+.notification.error .notification-icon {
+  color: #ef4444;
+}
+
+/* Info notification */
+.notification.info {
+  border-left: 4px solid #3b82f6;
+}
+
+.notification.info .notification-icon {
+  color: #3b82f6;
+}
+
+/* Warning notification */
+.notification.warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.notification.warning .notification-icon {
+  color: #f59e0b;
+}
+
+/* Animation for multiple notifications */
+.notification:nth-child(2) {
+  bottom: 80px;
+}
+
+.notification:nth-child(3) {
+  bottom: 140px;
+}
+
+.notification:nth-child(4) {
+  bottom: 200px;
+}
+
+.notification:nth-child(5) {
+  bottom: 260px;
+}

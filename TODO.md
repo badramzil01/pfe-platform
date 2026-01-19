@@ -1,0 +1,2 @@
+- [x] Remove settings NavLink from ProfSidebar.jsx
+- [x] Remove settings NavLink from StudentSidebar.jsx
