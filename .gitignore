@@ -1,7 +1,25 @@
-echo ".env
+# Environment variables & secrets
+.env
 firebase-admin.json
-__pycache__/
-venv/
+
+# Node / React
 node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Tests & build
+/build
+/dist
+
+# IDE & OS
 .vscode/
-.idea/" > .gitignore
+.idea/
+.DS_Store
+
+# Lock files (OPTIONNEL)
+package-lock.json
