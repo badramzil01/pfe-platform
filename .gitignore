@@ -1,25 +1,33 @@
-# Environment variables & secrets
-.env
-firebase-admin.json
-
-# Node / React
-node_modules/
-npm-debug.log*
-yarn-error.log*
-
-# Python
-venv/
+# =========================
+# PYTHON
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+venv/
+.env
 
-# Tests & build
-/build
-/dist
+# =========================
+# NODE / REACT
+# =========================
+node_modules/
+dist/
+build/
 
-# IDE & OS
+# =========================
+# OS / IDE
+# =========================
 .vscode/
 .idea/
 .DS_Store
 
-# Lock files (OPTIONNEL)
-package-lock.json
+# =========================
+# LOGS
+# =========================
+*.log
+
+# =========================
+# FIREBASE
+# =========================
+firebase-key.json
